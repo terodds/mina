@@ -1,0 +1,8 @@
+<import src="../footer/index.vue.wxml" />
+<template name="43822f44">
+  <view class="_div data-v-7278ae42 container" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class="_button data-v-7278ae42">微信登录</button>
+    <button open-type="contact" class="_button data-v-7278ae42">进入客服会话</button>
+    <template data="{{...$root[$kk+'0'], $root}}" is="34f4a0bc"></template>
+  </view>
+</template>

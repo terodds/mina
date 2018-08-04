@@ -1,0 +1,50 @@
+<template name="09ad102b">
+  <view class="_div data-v-3615a308 publish-card">
+    <view class="_div data-v-3615a308 publish-card__hd">
+      <view bindtap="handleProxy" class="_p data-v-3615a308 publish-card__title" data-eventid="{{'0'}}" data-comkey="{{$k}}"> {{ publishInfo.Title }}</view>
+      <view class="_div data-v-3615a308 publish-card__opt">
+        <view wx:if="{{!isFollow}}" class="_div data-v-3615a308">
+          <button class="_button data-v-3615a308 weui-btn btn-follow" type="primary" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">+关注</button>
+        </view>
+        <view wx:else class="_div data-v-3615a308">
+          <button class="_button data-v-3615a308 weui-btn btn-follow has-followed" type="primary" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">已关注</button>
+        </view>
+        <view class="_p data-v-3615a308 text-follower">1人已关注</view>
+      </view>
+    </view>
+    <view bindtap="handleProxy" class="_div data-v-3615a308 publish-card__bd" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-3615a308 publish-card__avatar">
+        <image wx:if="{{publishInfo.AvatarUrl}}" src="{{publishInfo.AvatarUrl}}" background-size="cover" class="_image data-v-3615a308"></image>
+      </view>
+      <view class="_div data-v-3615a308 publish-card__detail">
+        <view class="_div data-v-3615a308 publish-card__detail-group">
+          <view class="_div data-v-3615a308 label">姓　　名：</view>
+          <view class="_div data-v-3615a308 cont">
+            <label class="_span data-v-3615a308 text-name">{{ publishInfo.Nickname || '--' }}</label>
+            <label class="_span data-v-3615a308 text-sex" wx:if="{{ publishInfo.Gender == 0 }}">未知</label>
+            <label class="_span data-v-3615a308 text-sex" wx:elif="{{ publishInfo.Gender == 1 }}">男</label>
+            <label class="_span data-v-3615a308 text-sex" wx:else>女</label>
+          </view>
+        </view>
+        <view class="_div data-v-3615a308 publish-card__detail-group">
+          <view class="_div data-v-3615a308 label">生　　日：</view>
+          <view class="_div data-v-3615a308 cont">{{publishInfo.BirthedAt}}</view>
+        </view>
+        <view class="_div data-v-3615a308 publish-card__detail-group">
+          <view class="_div data-v-3615a308 label">档案编号：</view>
+          <view class="_div data-v-3615a308 cont">{{publishInfo.Babyid}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-3615a308 publish-card__fd">
+      <view class="_div data-v-3615a308 publish-card__detail-group">
+        <view class="_div data-v-3615a308 label">失踪时间：</view>
+        <view class="_div data-v-3615a308 cont">{{ publishInfo.MissedAt }}</view>
+      </view>
+      <view class="_div data-v-3615a308 publish-card__detail-group">
+        <view class="_div data-v-3615a308 label">失踪地点：</view>
+        <view class="_div data-v-3615a308 cont">{{publishInfo.MissedProvince}}{{publishInfo.MissedCity}} - {{publishInfo.MissedAddress}}</view>
+      </view>
+    </view>
+  </view>
+</template>

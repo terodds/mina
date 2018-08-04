@@ -1,0 +1,11 @@
+@import "/static/css/vendor.wxss";
+
+.page__bd.data-v-28633061 {
+  background: #fff;
+}
+.weui-agree.data-v-28633061 {
+  font-size: 30rpx;
+}
+.weui-btn-area.data-v-28633061 {
+  margin-bottom: 30rpx;
+}

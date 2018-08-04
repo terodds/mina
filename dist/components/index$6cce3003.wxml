@@ -1,0 +1,23 @@
+<import src="publish-card$0952936c" />
+<template name="index$6cce3003">
+  <view class="_div data-v-3e1b8c88 page1 bh-topic-page">
+    <view class="_div data-v-3e1b8c88 weui-cells weui-cells_after-title">
+      <view class="_div data-v-3e1b8c88 weui-tab">
+        <view class="_div data-v-3e1b8c88 weui-navbar">
+          <block wx:key="index" key="{{index}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">
+            <view id="{{index}}" class="_div data-v-3e1b8c88 weui-navbar__item {{[activeIndex == index ? 'weui-bar__item_on' : '']}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+              <view class="_div data-v-3e1b8c88 weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <view class="_div data-v-3e1b8c88 {{['weui-navbar__slider', 'weui-navbar__slider_' + activeIndex]}}"></view>
+        </view>
+        <view class="_div data-v-3e1b8c88 weui-tab__panel"></view>
+      </view>
+    </view>
+    <view class="_div data-v-3e1b8c88 publish-card-wrap">
+      <view class="_div data-v-3e1b8c88 publish-card-list">
+        <template wx:key="index" data="{{...$root[$kk+'0-'+index], $root}}" is="publish-card$0952936c" wx:for="{{items}}" wx:for-index="index" wx:for-item="item"></template>
+      </view>
+    </view>
+  </view>
+</template>

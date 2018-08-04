@@ -1,0 +1,5 @@
+<import src="../footer/index.vue.wxml" />
+<import src="../uploader/index.vue.wxml" />
+<import src="../contact/index.vue.wxml" />
+<import src="../../components/publish-card.vue.wxml" />
+<import src="../../components/card.vue.wxml" />

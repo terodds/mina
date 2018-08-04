@@ -1,0 +1,13 @@
+<template name="index$f5dc8914">
+  <view class="_div data-v-999a49ea page">
+    <view class="_div data-v-999a49ea page__hd">
+      <view class="_div data-v-999a49ea page__title">Picker</view>
+      <view class="_div data-v-999a49ea page__desc">选择器，这里使用小程序原生的picker。</view>
+    </view>
+    <view class="_div data-v-999a49ea page__bd">
+      <view class="_div data-v-999a49ea weui-btn-area">
+        <button type="default" class="_button data-v-999a49ea weui-btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">多级联动</button>
+      </view>
+    </view>
+  </view>
+</template>

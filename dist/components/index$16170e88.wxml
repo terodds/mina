@@ -1,0 +1,19 @@
+<template name="index$16170e88">
+  <view class="_div data-v-aa95575e page">
+    <view class="_div data-v-aa95575e page__hd">
+      <view class="_div data-v-aa95575e page__title">留言</view>
+    </view>
+    <view class="_div data-v-aa95575e page__bd">
+      <view class="_div data-v-aa95575e weui-cells weui-cells_after-title">
+        <view class="_div data-v-aa95575e weui-cell weui-cell_input">
+          <view class="_div data-v-aa95575e weui-cell__bd">
+            <textarea class="_textarea data-v-aa95575e weui-textarea" placeholder="写下你的留言" bindblur="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-aa95575e weui-btn-area">
+        <button class="_button data-v-aa95575e weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">留言</button>
+      </view>
+    </view>
+  </view>
+</template>

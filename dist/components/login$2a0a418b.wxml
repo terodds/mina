@@ -1,0 +1,15 @@
+<import src="card$1abdcf93" />
+<import src="footer$4e70058f" />
+<template name="login$2a0a418b">
+  <view class="_div data-v-7278ae42 container" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 小黑屋
+    <view class="_div data-v-7278ae42 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-7278ae42 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-7278ae42 userinfo-nickname">
+        <template data="{{...$root[$kk+'0'], $root}}" is="card$1abdcf93"></template>
+      </view>
+    </view>
+    <template data="{{...$root[$kk+'1'], $root}}" is="card$1abdcf93"></template>
+    <template data="{{...$root[$kk+'2'], $root}}" is="card$1abdcf93"></template>
+    <template data="{{...$root[$kk+'3'], $root}}" is="footer$4e70058f"></template>
+  </view>
+</template>

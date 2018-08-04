@@ -1,0 +1,38 @@
+<import src="card$1abdcf93" />
+<template name="home$324bd213">
+  <view class="_div data-v-1add1b08 container">
+    <view class="_div data-v-1add1b08 page__bd page__bd_spacing">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" bindchange="handleProxy" bindanimationfinish="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_swiper data-v-1add1b08">
+        <view wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" class="_div data-v-1add1b08">
+          <swiper-item class="_swiper-item data-v-1add1b08">
+            <image src="{{item}}" class="_image data-v-1add1b08 slide-image"></image>
+          </swiper-item>
+        </view>
+      </swiper>
+    </view>
+    <view class="_div data-v-1add1b08">
+      <view class="_ul data-v-1add1b08">
+        <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item" class="_li data-v-1add1b08">
+          <template data="{{...$root[$kk+'1-'+index], $root}}" is="card$1abdcf93"></template>
+          <image mode="{{item.mode}}" src="{{src}}" class="_image data-v-1add1b08"></image>
+          <template data="{{...$root[$kk+'2-'+index], $root}}" is="card$1abdcf93"></template>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-1add1b08 usermotto">
+      <view class="_div data-v-1add1b08 user-motto">
+        <template data="{{...$root[$kk+'3'], $root}}" is="card$1abdcf93"></template>
+      </view>
+    </view>
+    <navigator url="/pages/footer/main" class="_a data-v-1add1b08 counter">去往footer示例页面</navigator>
+    <navigator url="/pages/searchbar/main" class="_a data-v-1add1b08 counter">去往searchbar示例页面</navigator>
+    <navigator url="/pages/input/main" class="_a data-v-1add1b08 counter">去往input示例页面</navigator>
+    <view class="_div data-v-1add1b08 weui-footer">
+      <view class="_div data-v-1add1b08 weui-footer__links">
+        <navigator url class="_navigator data-v-1add1b08 weui-footer__link">友情链接</navigator>
+        <navigator url class="_navigator data-v-1add1b08 weui-footer__link">联系我们</navigator>
+      </view>
+      <view class="_div data-v-1add1b08 weui-footer__text">Copyright © 2008-2016 airdb.io</view>
+    </view>
+  </view>
+</template>

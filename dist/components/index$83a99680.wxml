@@ -1,0 +1,28 @@
+<template name="index$83a99680">
+  <view class="_div data-v-51d3f255 container">
+    <view class="_div data-v-51d3f255 page">
+      <view class="_view data-v-51d3f255 page__hd">
+        <view class="_view data-v-51d3f255 page__title">Swiper</view>
+        <view class="_view data-v-51d3f255 page__desc">滑块视图容器，这里采用小程序原生 swiper 组件实现。</view>
+      </view>
+      <view class="_div data-v-51d3f255 page__bd page__bd_spacing">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" bindchange="handleProxy" bindanimationfinish="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_swiper data-v-51d3f255">
+          <view wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" class="_div data-v-51d3f255">
+            <swiper-item class="_swiper-item data-v-51d3f255">
+              <image src="{{item}}" class="_image data-v-51d3f255 slide-image"></image>
+            </swiper-item>
+          </view>
+        </swiper>
+      </view>
+    </view>
+    <view class="_div data-v-51d3f255 xx">
+      <view class="_ul data-v-51d3f255">
+        <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item" class="_li data-v-51d3f255">
+          <card text="{{item.text}}" class="_card data-v-51d3f255"></card>
+          <image mode="{{item.mode}}" src="{{src}}" class="_image data-v-51d3f255"></image>
+          <card text="{{item.desc}}" class="_card data-v-51d3f255"></card>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

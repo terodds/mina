@@ -1,0 +1,30 @@
+@import "/static/css/vendor.wxss";
+
+.searchbar-result.data-v-bd0b6a78 {
+  margin-top: 0;
+  font-size: 28rpx;
+}
+.searchbar-result.data-v-bd0b6a78:before {
+  display: none;
+}
+.weui-cell.data-v-bd0b6a78 {
+  padding: 24rpx 30rpx 24rpx 70rpx;
+}
+.slide-image.data-v-bd0b6a78 {
+  width: 100%;
+  height: 100%;
+}
+.btn-post.data-v-bd0b6a78 {
+  float: right;
+  position: fixed;
+  bottom: 40rpx;
+  right: 20rpx;
+  height: 120rpx;
+  width: 120rpx;
+}
+.bh-index-page.data-v-bd0b6a78 {
+  padding-bottom: 20rpx;
+}
+.bh-search-mod .weui-icon-search.data-v-bd0b6a78 {
+  vertical-align: -6rpx;
+}

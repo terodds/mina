@@ -1,0 +1,36 @@
+<template name="topic$14a5c05e">
+  <view class="_div data-v-3e1b8c88 page1 bh-topic-page">
+    <view class="_div data-v-3e1b8c88 weui-cells weui-cells_after-title">
+      <view class="_div data-v-3e1b8c88 weui-tab">
+        <view class="_div data-v-3e1b8c88 weui-navbar">
+          <block wx:key="index" key="{{index}}" wx:for="{{tabs}}" wx:for-index="index" wx:for-item="item">
+            <view id="{{index}}" class="_div data-v-3e1b8c88 weui-navbar__item {{[activeIndex == index ? 'weui-bar__item_on' : '']}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+              <view class="_div data-v-3e1b8c88 weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <view class="_div data-v-3e1b8c88 {{['weui-navbar__slider', 'weui-navbar__slider_' + activeIndex]}}"></view>
+        </view>
+        <view class="_div data-v-3e1b8c88 weui-tab__panel">
+          <view class="_div data-v-3e1b8c88 weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>
+          <view class="_div data-v-3e1b8c88 weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+          <view class="_div data-v-3e1b8c88 weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+          <view class="_div data-v-3e1b8c88 weui-tab__content" hidden="{{activeIndex != 3}}">选项四的内容</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-3e1b8c88 topic-list-wrap">
+      <view class="_ul data-v-3e1b8c88 topic-list">
+        <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item" class="_li data-v-3e1b8c88">
+          <image class="_image data-v-3e1b8c88 userinfo-avatar" wx:if="{{item.AvatarUrl}}" src="{{item.AvatarUrl}}" background-size="cover"></image>
+          <view class="_p data-v-3e1b8c88 userinfo-nickname">{{item.NickName}}</view>
+          <view class="_p data-v-3e1b8c88 others30" wx:if="{{item.gender === '0' }}" n>{{item.Province}}{{item.City}} - {{item.Age}} 岁 - 未知</view>
+          <view class="_p data-v-3e1b8c88 others30" wx:elif="{{item.gender === '1' }}">{{item.Province}}{{item.City}} - {{item.Age}} 岁 - 男</view>
+          <view class="_p data-v-3e1b8c88 others30" wx:else>{{item.Province}}{{item.City}} - {{item.Age}} 岁 - 女</view>
+          <view class="_p data-v-3e1b8c88 others30">失踪时间：{{item.MissedAt}} </view>
+          <view class="_div data-v-3e1b8c88 clear"></view>
+          <view class="_p data-v-3e1b8c88 userinfo-address">失踪地点：{{item.Province}}{{item.City}} - {{item.Address}} </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,14 @@
+<template name="index$ffb31bba">
+  <view class="_div data-v-13cf2fb8 page">
+    <view class="_div data-v-13cf2fb8 weui-footer">
+      <view class="_div data-v-13cf2fb8"></view>
+      <view class="_div data-v-13cf2fb8 weui-footer__links">
+        <navigator url="/pages/licence/main" class="_navigator data-v-13cf2fb8 weui-footer__link">相关条款</navigator>
+        <navigator url="/pages/hr/main" class="_navigator data-v-13cf2fb8 weui-footer__link">加入我们</navigator>
+        <image src="/images/cs.png" mode="widthFix" style="width: 20px; height: 20px;" class="_image data-v-13cf2fb8"></image>
+        <contact-button type="default-light" size="20" session-from="weapp" class="_contact-button data-v-13cf2fb8"></contact-button>
+      </view>
+      <view class="_div data-v-13cf2fb8 weui-footer__text">Copyright © 2008-2018 宝贝科技</view>
+    </view>
+  </view>
+</template>

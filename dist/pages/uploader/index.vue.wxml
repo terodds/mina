@@ -1,0 +1,29 @@
+<template name="d8af7b16">
+  <view class="_div data-v-8239776a page__bd">
+    <view class="_div data-v-8239776a weui-cells weui-cells_after-title">
+      <view class="_div data-v-8239776a weui-cell">
+        <view class="_div data-v-8239776a weui-cell__bd">
+          <view class="_div data-v-8239776a weui-uploader">
+            <view class="_div data-v-8239776a weui-article__h1">第一张为封面，照片务必清晰。</view>
+            <view class="_div data-v-8239776a weui-uploader__bd">
+              <view class="_div data-v-8239776a weui-uploader__files" id="uploaderFiles">
+                <block wx:key="index" key="{{index}}" wx:for="{{files}}" wx:for-index="index" wx:for-item="item">
+                  <view class="_div data-v-8239776a weui-uploader__file">
+                    <image class="_image data-v-8239776a weui-uploader__img" src="{{item}}" mode="aspectFill" bindtap="handleProxy" id="{{item}}" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}"></image>
+                    <view class="_div data-v-8239776a delete-icon" bindtap="handleProxy" id="{{item}}" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}"></view>
+                  </view>
+                </block>
+              </view>
+              <view class="_div data-v-8239776a weui-uploader__input-box">
+                <view class="_div data-v-8239776a weui-uploader__input" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-8239776a weui-btn-area">
+      <button class="_button data-v-8239776a weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">一键上传</button>
+    </view>
+  </view>
+</template>

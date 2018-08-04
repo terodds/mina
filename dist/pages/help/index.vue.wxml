@@ -1,0 +1,24 @@
+<template name="279aa7f0">
+  <view class="_div data-v-00d58b44 page">
+    <view class="_div data-v-00d58b44 page__hd"></view>
+    <view class="_div data-v-00d58b44 page__bd">
+      <view class="_div data-v-00d58b44 weui-article">
+        <view class="_div data-v-00d58b44 weui-article__h1">智能机器人介绍</view>
+        <view class="_div data-v-00d58b44 weui-article__section">
+          <view class="_div data-v-00d58b44 weui-article__section">
+            <view class="_div data-v-00d58b44 weui-article__h3">1. 背景介绍</view>
+            <view class="_div data-v-00d58b44 weui-article__p"> 由于宝贝回家有大量的咨询工作，客服工作任务非常重。 所以希望通过机器人提供智能客服服务，提升信息扩散速度。 </view>
+          </view>
+          <view class="_div data-v-00d58b44 weui-article__section">
+            <view class="_div data-v-00d58b44 weui-article__h3">2. 欢迎加入</view>
+            <view class="_div data-v-00d58b44 weui-article__p"> 命令行模式：
+              <view class="_p data-v-00d58b44">\thelp: 提供帮忙，或使用指引。</view>
+              <view class="_p data-v-00d58b44">\t100200；一串数字默认为归档编号。</view>
+              <view class="_p data-v-00d58b44">\张三：丢失宝贝姓名</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

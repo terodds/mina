@@ -1,0 +1,62 @@
+<import src="index$ffb31bba" />
+<template name="index$2e26327d">
+  <view class="_div data-v-4adfb102 bh-profile-page">
+    <view class="_div data-v-4adfb102 profile-page-main">
+      <view class="_div data-v-4adfb102 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-4adfb102 userinfo-avatar">
+          <image class="_image data-v-4adfb102 img" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <view wx:if="{{!isLogin}}" class="_div data-v-4adfb102">
+          <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" class="_button data-v-4adfb102">微信登录</button>
+        </view>
+        <view wx:else class="_div data-v-4adfb102">
+          <view class="_div data-v-4adfb102 userinfo-cont">
+            <view class="_div data-v-4adfb102 text-name">{{ userInfo.nickName }}</view>
+            <view class="_div data-v-4adfb102">公益时长：{{servicetime}}小时</view>
+          </view>
+        </view>
+        <view class="_div data-v-4adfb102 userinfo-volunt">
+          <view class="_i data-v-4adfb102 icon-dot"></view>加入志愿者</view>
+      </view>
+      <view class="_div data-v-4adfb102 post-panel">
+        <view class="_div data-v-4adfb102 post-panel__hd">
+          <view class="_h3 data-v-4adfb102 post-panel__title">登记信息</view>
+        </view>
+        <view class="_div data-v-4adfb102 post-panel__bd">
+          <view class="_div data-v-4adfb102 kind-list">
+            <view class="_div data-v-4adfb102 kind-item" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+              <view class="_div data-v-4adfb102 kind-item__pic">
+                <image class="_img data-v-4adfb102 img" wx:if="{{userInfo.avatarUrl}}" src="{{item.src}}" background-size="cover"></image>
+              </view>
+              <view class="_div data-v-4adfb102 kind-item__cont">
+                <view class="_div data-v-4adfb102">{{ item.name }}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-4adfb102 notice-card">
+        <view class="_div data-v-4adfb102 notice-card__pic">
+          <image class="_img data-v-4adfb102 img" src="/images/cat.jpg" alt></image>
+        </view>
+        <view class="_div data-v-4adfb102 notice-card__cont">
+          <view class="_p data-v-4adfb102">第2388例 | 二十一年苦寻，夺子之痛难愈</view>
+          <view class="_p data-v-4adfb102">寻找曾华起</view>
+        </view>
+      </view>
+      <view class="_div data-v-4adfb102 notice-card">
+        <view class="_div data-v-4adfb102 notice-card__pic">
+          <image class="_img data-v-4adfb102 img" src="/images/cat.jpg" alt></image>
+        </view>
+        <view class="_div data-v-4adfb102 notice-card__cont">
+          <view class="_p data-v-4adfb102">第2397例 | 残纸寄乡愁</view>
+          <view class="_p data-v-4adfb102">高杉回家</view>
+        </view>
+      </view>
+    </view>
+    <image src="/images/addition_fill.png" class="_img data-v-4adfb102 btn-post" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"></image>
+    <view class="_div data-v-4adfb102 profile-page-footer">
+      <template data="{{...$root[$kk+'0'], $root}}" is="index$ffb31bba"></template>
+    </view>
+  </view>
+</template>

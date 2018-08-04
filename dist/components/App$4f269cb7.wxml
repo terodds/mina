@@ -1,0 +1,5 @@
+<template name="App$4f269cb7">
+  <view class="_main data-v-2e4c19bc baby-home">
+    <router-viewr class="_router-viewr data-v-2e4c19bc"></router-viewr>
+  </view>
+</template>

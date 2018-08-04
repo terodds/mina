@@ -1,0 +1,50 @@
+<template name="uploader$56b3ff3c">
+  <view class="_div data-v-8239776a page">
+    <view class="_div data-v-8239776a page__hd">
+      <view class="_div data-v-8239776a page__title">丢失登记(1/4)</view>
+    </view>
+    <view class="_div data-v-8239776a page__bd">
+      <view class="_div data-v-8239776a weui-cells">
+        <view class="_div data-v-8239776a weui-cell">
+          <view class="_div data-v-8239776a weui-cell__bd">
+            <view class="_div data-v-8239776a weui-uploader">
+              <view class="_div data-v-8239776a weui-article__h1">封面上传</view>
+              <view class="_p data-v-8239776a">注意： 封面照片应头像清晰，头像居中。</view>
+              <view class="_div data-v-8239776a weui-uploader__bd">
+                <view class="_div data-v-8239776a weui-uploader__files" id="uploaderFiles">
+                  <block wx:key="index" key="{{index}}" wx:for="{{files}}" wx:for-index="index" wx:for-item="item">
+                    <view class="_div data-v-8239776a weui-uploader__file" bindtap="handleProxy" id="{{item}}" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}">
+                      <image class="_image data-v-8239776a weui-uploader__img" src="{{item}}" mode="aspectFill"></image>
+                    </view>
+                  </block>
+                </view>
+                <view class="_div data-v-8239776a weui-uploader__input-box">
+                  <view class="_div data-v-8239776a weui-uploader__input" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
+                </view>
+              </view>
+              <view class="_div data-v-8239776a weui-uploader__hd">
+                <view class="_div data-v-8239776a weui-uploader__title">图片上传</view>
+                <view class="_div data-v-8239776a weui-uploader__info">{{files.length}}/9</view>
+              </view>
+              <view class="_div data-v-8239776a weui-uploader__bd">
+                <view class="_div data-v-8239776a weui-uploader__files" id="uploaderFiles">
+                  <block wx:key="index" key="{{index}}" wx:for="{{files}}" wx:for-index="index" wx:for-item="item">
+                    <view class="_div data-v-8239776a weui-uploader__file" bindtap="handleProxy" id="{{item}}" data-eventid="{{'2-'+index}}" data-comkey="{{$k}}">
+                      <image class="_image data-v-8239776a weui-uploader__img" src="{{item}}" mode="aspectFill"></image>
+                    </view>
+                  </block>
+                </view>
+                <view class="_div data-v-8239776a weui-uploader__input-box">
+                  <view class="_div data-v-8239776a weui-uploader__input" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-8239776a weui-btn-area">
+        <button class="_button data-v-8239776a weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">第一步：图片上传</button>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,29 @@
+@import "/static/css/vendor.wxss";
+
+.sex-radio-group.data-v-c1a58630 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sex-radio-group  .weui-check__label.data-v-c1a58630 {
+  padding-left: 0;
+  padding-right: 60rpx;
+}
+.sex-radio-group  .weui-cell__ft_in-radio.data-v-c1a58630 {
+  padding-left: 0;
+}
+.sex-radio-group icon.data-v-c1a58630 {
+  margin-left: 0;
+}
+.weui-btn-area.data-v-c1a58630 {
+  padding-bottom: 80rpx;
+}
+.lost-picker-wrap.data-v-c1a58630 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lost-picker-wrap picker.data-v-c1a58630 {
+  margin-right: 40rpx;
+}

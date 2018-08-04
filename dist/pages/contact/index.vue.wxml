@@ -1,0 +1,53 @@
+<template name="90a452d6">
+  <view class="_div data-v-e4423a8e page">
+    <view class="_div data-v-e4423a8e page__bd">
+      <view class="_div data-v-e4423a8e weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">填写错误, 请检查</view>
+      <view class="_div data-v-e4423a8e weui-cells weui-cells_after-title">
+        <view class="_div data-v-e4423a8e weui-cell weui-cell_input">
+          <view class="_div data-v-e4423a8e weui-cell__hd">
+            <view class="_div data-v-e4423a8e weui-label">联系人</view>
+          </view>
+          <view class="_div data-v-e4423a8e weui-cell__bd">
+            <input class="_input data-v-e4423a8e weui-input" placeholder="请输入姓名" bindblur="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-e4423a8e weui-cell weui-cell_input">
+          <view class="_div data-v-e4423a8e weui-cell__hd">
+            <view class="_div data-v-e4423a8e weui-label">联系电话</view>
+          </view>
+          <view class="_div data-v-e4423a8e weui-cell__bd">
+            <input class="_input data-v-e4423a8e weui-input" placeholder="请输入电话" bindblur="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-e4423a8e weui-cell weui-cell_input">
+          <view class="_div data-v-e4423a8e weui-cell__hd">
+            <view class="_div data-v-e4423a8e weui-label">微信号</view>
+          </view>
+          <view class="_div data-v-e4423a8e weui-cell__bd">
+            <input class="_input data-v-e4423a8e weui-input" placeholder="请输入微信号" bindblur="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-e4423a8e weui-cell weui-cell_input">
+          <view class="_div data-v-e4423a8e weui-cell__hd">
+            <view class="_div data-v-e4423a8e weui-label">联系地址</view>
+          </view>
+          <view class="_div data-v-e4423a8e weui-cell__bd">
+            <input class="_input data-v-e4423a8e weui-input" placeholder="请输地址" bindblur="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-e4423a8e weui-cell weui-cell_input">
+          <view class="_div data-v-e4423a8e weui-cell__hd">
+            <view class="_div data-v-e4423a8e weui-label">其他信息</view>
+          </view>
+          <view class="_div data-v-e4423a8e weui-cell__bd">
+            <input class="_input data-v-e4423a8e weui-input" placeholder="请输入其他联系方式" bindblur="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-e4423a8e text-tipmsg">
+        <view class="_p data-v-e4423a8e"> 重要提示：</view>
+        <view class="_p data-v-e4423a8e"> 联系人信息为保密信息，未经许可，本平台不会泄露。 请用户注意保护隐私，不要在论坛跟贴回复联系方式。</view>
+      </view>
+    </view>
+  </view>
+</template>

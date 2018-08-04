@@ -1,0 +1,73 @@
+<template name="index$09238e2a">
+  <view class="_div data-v-03f236af page">
+    <view class="_div data-v-03f236af page__hd">
+      <view class="_div data-v-03f236af page__title">登记联系人(3/4)</view>
+    </view>
+    <view class="_div data-v-03f236af page__bd">
+      <view class="_div data-v-03f236af weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">填写错误, 请检查</view>
+      <view class="_div data-v-03f236af weui-cells weui-cells_after-title">
+        <view class="_div data-v-03f236af weui-cell weui-cell_input">
+          <view class="_div data-v-03f236af weui-cell__hd">
+            <view class="_div data-v-03f236af weui-label">联系人</view>
+          </view>
+          <view class="_div data-v-03f236af weui-cell__bd">
+            <input class="_input data-v-03f236af weui-input" placeholder="请输入姓名" bindblur="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-03f236af weui-cells weui-cells_after-title">
+        <view class="_div data-v-03f236af weui-cell weui-cell_select">
+          <view class="_div data-v-03f236af weui-cell__hd" style="width: 105px;padding-left:0">
+            <picker bindchange="handleProxy" range="{{countryCodes}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-03f236af">
+              <view class="_div data-v-03f236af weui-select">{{countryCodes[countryCodesIndex]}}</view>
+            </picker>
+          </view>
+          <view class="_div data-v-03f236af weui-cell__bd weui-cell__bd_in-select-before">
+            <input class="_input data-v-03f236af weui-input" placeholder="请输入号码" bindblur="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-03f236af weui-cells weui-cells_after-title">
+        <view class="_div data-v-03f236af weui-cell weui-cell_input">
+          <view class="_div data-v-03f236af weui-cell__hd">
+            <view class="_div data-v-03f236af weui-label">微信号</view>
+          </view>
+          <view class="_div data-v-03f236af weui-cell__bd">
+            <input class="_input data-v-03f236af weui-input" placeholder="请输入微信号" bindblur="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-03f236af weui-cell weui-cell_input">
+          <view class="_div data-v-03f236af weui-cell__hd">
+            <view class="_div data-v-03f236af weui-label">邮箱</view>
+          </view>
+          <view class="_div data-v-03f236af weui-cell__bd">
+            <input class="_input data-v-03f236af weui-input" placeholder="请输入邮箱" bindblur="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-03f236af weui-cell weui-cell_input">
+          <view class="_div data-v-03f236af weui-cell__hd">
+            <view class="_div data-v-03f236af weui-label">联系地址</view>
+          </view>
+          <view class="_div data-v-03f236af weui-cell__bd">
+            <input class="_input data-v-03f236af weui-input" placeholder="请输地址" bindblur="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+        <view class="_div data-v-03f236af weui-cell weui-cell_input">
+          <view class="_div data-v-03f236af weui-cell__hd">
+            <view class="_div data-v-03f236af weui-label">其他信息</view>
+          </view>
+          <view class="_div data-v-03f236af weui-cell__bd">
+            <input class="_input data-v-03f236af weui-input" placeholder="请输入其他联系方式" bindblur="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-03f236af text-tipmsg">
+        <view class="_p data-v-03f236af"> 重要提示：</view>
+        <view class="_p data-v-03f236af"> 联系人信息为保密信息，未经许可，本平台不会泄露。 请用户注意保护隐私，不要在论坛跟贴回复联系方式。</view>
+      </view>
+    </view>
+    <view class="_div data-v-03f236af weui-btn-area">
+      <button class="_button data-v-03f236af weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}">第三录：登记联系人</button>
+    </view>
+  </view>
+</template>

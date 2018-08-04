@@ -1,0 +1,19 @@
+<template name="index$0e30a89a">
+  <view class="_div data-v-15a12a38 page">
+    <view class="_div data-v-15a12a38 page__hd">
+      <view class="_div data-v-15a12a38 page__title">提供线索</view>
+    </view>
+    <view class="_div data-v-15a12a38 page__bd">
+      <view class="_div data-v-15a12a38 weui-cells weui-cells_after-title">
+        <view class="_div data-v-15a12a38 weui-cell weui-cell_input">
+          <view class="_div data-v-15a12a38 weui-cell__bd">
+            <textarea class="_textarea data-v-15a12a38 weui-textarea" placeholder="写下您的线索，请务必准确，尽量详细！" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-15a12a38 weui-btn-area">
+        <button class="_button data-v-15a12a38 weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">提交</button>
+      </view>
+    </view>
+  </view>
+</template>

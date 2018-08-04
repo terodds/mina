@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/topic/main",
+    "pages/article/main",
+    "pages/comment/main",
+    "pages/contact/main",
+    "pages/counter/main",
+    "pages/footer/main",
+    "pages/home/main",
+    "pages/hr/main",
+    "pages/input/main",
+    "pages/jump/main",
+    "pages/licence/main",
+    "pages/login/main",
+    "pages/logs/main",
+    "pages/preview/main",
+    "pages/profile/main",
+    "pages/publish/main",
+    "pages/swiper-bak/main",
+    "pages/swiper/main",
+    "pages/test/main",
+    "pages/uploader/main"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宝贝回家",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#fff",
+    "borderStyle": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/home/main",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home_active.png"
+      },
+      {
+        "pagePath": "pages/topic/main",
+        "text": "助力",
+        "iconPath": "images/reading.png",
+        "selectedIconPath": "images/reading_active.png"
+      },
+      {
+        "pagePath": "pages/profile/main",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_active.png"
+      }
+    ]
+  }
+}

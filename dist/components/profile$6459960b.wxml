@@ -1,0 +1,41 @@
+<import src="card$1abdcf93" />
+<import src="footer$4e70058f" />
+<template name="profile$6459960b">
+  <view class="_div data-v-4adfb102 container bh-profile-page" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-4adfb102 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-4adfb102 userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-4adfb102 userinfo-nickname">
+        <view class="_div data-v-4adfb102 fn-align-center">
+          <template data="{{...$root[$kk+'0'], $root}}" is="card$1abdcf93"></template>
+        </view>
+        <template data="{{...$root[$kk+'1'], $root}}" is="card$1abdcf93"></template>
+      </view>
+    </view>
+    <view class="_hr data-v-4adfb102"></view>
+    <view class="_div data-v-4adfb102 page__bd page__bd_spacing">
+      <view class="_div data-v-4adfb102 kind-list">
+        <navigator class="_navigator data-v-4adfb102 weui-cell weui-cell_access" url="/pages/publish/main">
+          <view class="_div data-v-4adfb102 weui-cell__bd">我要发布</view>
+          <view class="_div data-v-4adfb102 weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator class="_navigator data-v-4adfb102 weui-cell weui-cell_access" url>
+          <view class="_div data-v-4adfb102 weui-cell__bd">草稿箱</view>
+          <view class="_div data-v-4adfb102 weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator class="_navigator data-v-4adfb102 weui-cell weui-cell_access" url>
+          <view class="_div data-v-4adfb102 weui-cell__bd">发布历史</view>
+          <view class="_div data-v-4adfb102 weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator class="_navigator data-v-4adfb102 weui-cell weui-cell_access" url>
+          <view class="_div data-v-4adfb102 weui-cell__bd">我的参与</view>
+          <view class="_div data-v-4adfb102 weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator class="_navigator data-v-4adfb102 weui-cell weui-cell_access" url>
+          <view class="_div data-v-4adfb102 weui-cell__bd">设置</view>
+          <view class="_div data-v-4adfb102 weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+      </view>
+    </view>
+    <template data="{{...$root[$kk+'2'], $root}}" is="footer$4e70058f"></template>
+  </view>
+</template>

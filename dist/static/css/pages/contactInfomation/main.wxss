@@ -1,0 +1,8 @@
+@import "/static/css/vendor.wxss";
+
+.text-tipmsg.data-v-03f236af {
+  margin: 30rpx 30rpx 10rpx;
+  line-height: 1.4;
+  font-size: 28rpx;
+  color: #999;
+}

@@ -1,0 +1,64 @@
+<import src="publish-card$09ad102b" />
+<template name="index$41a237b4">
+  <view class="_div data-v-1add1b08 page bh-index-page">
+    <view class="_div data-v-1add1b08 bh-search-mod">
+      <view class="_div data-v-1add1b08 weui-search-bar">
+        <view class="_div data-v-1add1b08 weui-search-bar__form">
+          <view class="_div data-v-1add1b08 weui-search-bar__box">
+            <icon class="_icon data-v-1add1b08 weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="_input data-v-1add1b08 weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" bindinput="handleProxy" focus="{{inputShowed}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+            <view class="_div data-v-1add1b08 weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+              <icon type="clear" size="14" class="_icon data-v-1add1b08"></icon>
+            </view>
+          </view>
+          <label class="_label data-v-1add1b08 weui-search-bar__label" hidden="{{inputShowed}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+            <icon class="_icon data-v-1add1b08 weui-icon-search" type="search" size="14"></icon>
+            <view class="_div data-v-1add1b08 weui-search-bar__text">搜索</view>
+          </label>
+        </view>
+        <view class="_div data-v-1add1b08 weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">取消</view>
+      </view>
+      <view class="_div data-v-1add1b08 weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+        <navigator url class="_navigator data-v-1add1b08 weui-cell" hover-class="weui-cell_active">
+          <view class="_div data-v-1add1b08 weui-cell__bd">
+            <view class="_div data-v-1add1b08">实时搜索文本1</view>
+          </view>
+        </navigator>
+        <navigator url class="_navigator data-v-1add1b08 weui-cell" hover-class="weui-cell_active">
+          <view class="_div data-v-1add1b08 weui-cell__bd">
+            <view class="_div data-v-1add1b08">实时搜索文本2</view>
+          </view>
+        </navigator>
+        <navigator url class="_navigator data-v-1add1b08 weui-cell" hover-class="weui-cell_active">
+          <view class="_div data-v-1add1b08 weui-cell__bd">
+            <view class="_div data-v-1add1b08">实时搜索文本3</view>
+          </view>
+        </navigator>
+        <navigator url class="_navigator data-v-1add1b08 weui-cell" hover-class="weui-cell_active">
+          <view class="_div data-v-1add1b08 weui-cell__bd">
+            <view class="_div data-v-1add1b08">实时搜索文本4</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="_div data-v-1add1b08 page" hidden="{{!(!isShowCard)}}">
+      <view class="_div data-v-1add1b08 page__bd page__bd_spacing">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" bindchange="handleProxy" bindanimationfinish="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_swiper data-v-1add1b08">
+          <view wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" class="_div data-v-1add1b08">
+            <swiper-item class="_swiper-item data-v-1add1b08">
+              <image src="{{item}}" class="_image data-v-1add1b08 slide-image"></image>
+            </swiper-item>
+          </view>
+        </swiper>
+      </view>
+    </view>
+    <view class="_div data-v-1add1b08 page" hidden="{{!(isShowCard)}}">
+      <view class="_div data-v-1add1b08 publish-card-wrap">
+        <template data="{{...$root[$kk+'1'], $root}}" is="publish-card$09ad102b"></template>
+      </view>
+    </view>
+    <map id="map" scale="14" show-location style="width: 100%; height: 300px;" longitude="{{userLocation.longitude}}" latitude="{{userLocation.latitude}}" markers="{{markers}}" circles="{{circles}}" bindmarkertap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}"
+      class="_map data-v-1add1b08"></map>
+    <image src="/images/addition_fill.png" class="_img data-v-1add1b08 btn-post" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"></image>
+  </view>
+</template>

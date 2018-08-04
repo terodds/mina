@@ -1,0 +1,70 @@
+<import src="index$ffb31bba" />
+<template name="index$0ba9b1dc">
+  <view class="_div data-v-28633061 page">
+    <view class="_div data-v-28633061 page__hd"></view>
+    <view class="_div data-v-28633061 page__bd">
+      <view class="_div data-v-28633061 weui-article">
+        <view class="_div data-v-28633061 weui-article__h1">{{article.title}}</view>
+        <view class="_div data-v-28633061 weui-article__section">
+          <view class="_div data-v-28633061 weui-article__p">
+            <image class="_image data-v-28633061 weui-article__img" src="{{article.imageFiles}}" mode="aspectFit" style="height: 180px"></image>
+          </view>
+          <view class="_div data-v-28633061 bh-article-row">
+            <view class="_div data-v-28633061 bh-article-group">
+              <label class="_span data-v-28633061 bh-article-group__label">姓　　名</label>
+              <view class="_p data-v-28633061 bh-article-group__cont">{{ article.nickName || '--' }}</view>
+            </view>
+            <view class="_div data-v-28633061 bh-article-group">
+              <label class="_span data-v-28633061 bh-article-group__label">性别</label>
+              <view wx:if="{{article.gender === 1}}" class="_div data-v-28633061">
+                <view class="_p data-v-28633061 bh-article-group__cont">男</view>
+              </view>
+              <view wx:elif="{{article.gender === 2}}" class="_div data-v-28633061">
+                <view class="_p data-v-28633061 bh-article-group__cont">女</view>
+              </view>
+              <view wx:else class="_div data-v-28633061">
+                <view class="_p data-v-28633061 bh-article-group__cont">未知</view>
+              </view>
+            </view>
+          </view>
+          <view class="_div data-v-28633061 bh-article-group">
+            <label class="_span data-v-28633061 bh-article-group__label">出生日期</label>
+            <view class="_p data-v-28633061 bh-article-group__cont">{{ article.birthedAt || '--' }}</view>
+          </view>
+          <view class="_div data-v-28633061 bh-article-group">
+            <label class="_span data-v-28633061 bh-article-group__label">失踪时间</label>
+            <view class="_p data-v-28633061 bh-article-group__cont">{{article.missedAt || '--'}}</view>
+          </view>
+          <view class="_div data-v-28633061 bh-article-group">
+            <label class="_span data-v-28633061 bh-article-group__label">失踪地点</label>
+            <view class="_p data-v-28633061 bh-article-group__cont">{{article.province}}{{article.city}}-{{article.address}}</view>
+          </view>
+          <view class="_div data-v-28633061 bh-article-group">
+            <label class="_span data-v-28633061 bh-article-group__label">特征描述</label>
+            <view class="_p data-v-28633061 bh-article-group__cont">{{article.characters || '--'}}</view>
+          </view>
+          <view class="_div data-v-28633061 bh-article-group">
+            <label class="_span data-v-28633061 bh-article-group__label">发布详情</label>
+            <view class="_p data-v-28633061 bh-article-group__cont">{{article.details || '--'}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <checkbox-group bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-28633061">
+      <label class="_label data-v-28633061 weui-agree" for="weuiAgree">
+        <view class="_div data-v-28633061 weui-agree__text">
+          <checkbox class="_checkbox data-v-28633061 weui-agree__checkbox" id="weuiAgree" value="agree" checked="isAgree" />
+          <view class="_div data-v-28633061 weui-agree__checkbox-icon">
+            <icon class="_icon data-v-28633061 weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+          </view> 阅读并同意
+          <navigator url="/pages/licence/main" class="_navigator data-v-28633061 weui-agree__link">《相关条款》</navigator>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class="_div data-v-28633061 weui-btn-area">
+      <button class="_button data-v-28633061 weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">保存至草稿箱</button>
+      <button class="_button data-v-28633061 weui-btn" type="primary" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">发布</button>
+    </view>
+    <template data="{{...$root[$kk+'1'], $root}}" is="index$ffb31bba"></template>
+  </view>
+</template>

@@ -1,0 +1,27 @@
+<import src="card$00fa3e2d" />
+<template name="index$55239af2">
+  <view class="_div data-v-69a7f86b container" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+    <view class="_div data-v-69a7f86b userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <image class="_img data-v-69a7f86b userinfo-avatar" wx:if="{{userInfo.avatarUrl}}" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="_div data-v-69a7f86b userinfo-nickname">
+        <template data="{{...$root[$kk+'0'], $root}}" is="card$00fa3e2d"></template>
+      </view>
+    </view> {{userInfo.gender}}
+    <view class="_p data-v-69a7f86b"></view> {{userInfo.city}}
+    <view class="_p data-v-69a7f86b"></view> {{userInfo.province}}
+    <view class="_p data-v-69a7f86b"></view> {{userInfo.country}}
+    <view class="_p data-v-69a7f86b"></view> {{userInfo.language}}
+    <view class="_p data-v-69a7f86b"></view>
+    <button class="_button data-v-69a7f86b">获取用户唯一标识openid</button> openid:{{openid}}session_key:{{session_key}}
+    <view class="_div data-v-69a7f86b usermotto">
+      <view class="_div data-v-69a7f86b user-motto">
+        <template data="{{...$root[$kk+'1'], $root}}" is="card$00fa3e2d"></template>
+      </view>
+    </view>
+    <form class="_form data-v-69a7f86b form-container">
+      <input type="text" class="_input data-v-69a7f86b form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+      <input type="text" class="_input data-v-69a7f86b form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'2'}}" data-comkey="{{$k}}" />
+    </form>
+    <navigator url="/pages/counter/main" class="_a data-v-69a7f86b counter">去往Vuex示例页面</navigator>
+  </view>
+</template>

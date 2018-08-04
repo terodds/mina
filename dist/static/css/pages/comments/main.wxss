@@ -1,0 +1,5 @@
+@import "/static/css/vendor.wxss";
+
+.weui-textarea.data-v-aa95575e {
+  padding: 30rpx 0;
+}

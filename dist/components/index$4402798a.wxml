@@ -1,0 +1,68 @@
+<import src="index$ffb31bba" />
+<template name="index$4402798a">
+  <view class="_div data-v-60bbf80f page  bh-article-page">
+    <view class="_div data-v-60bbf80f page__bd">
+      <view class="_div data-v-60bbf80f weui-article">
+        <view class="_div data-v-60bbf80f weui-article__h1">{{ article.NickName }}-{{gender}}-{{ article.Age}}岁-{{article.Province}}{{article.City}}</view>
+        <view class="_div data-v-60bbf80f weui-article__section">
+          <view class="_div data-v-60bbf80f weui-article__p">
+            <image class="_image data-v-60bbf80f weui-article__img" src="/images/cat.jpg" mode="aspectFit" style="height: 180px"></image>
+          </view>
+          <view class="_div data-v-60bbf80f bh-article-group">
+            <label class="_span data-v-60bbf80f bh-article-group__label">姓　　名</label>
+            <view class="_p data-v-60bbf80f bh-article-group__cont">{{ article.NickName || '--' }}</view>
+          </view>
+          <view class="_div data-v-60bbf80f bh-article-row">
+            <view class="_div data-v-60bbf80f bh-article-group">
+              <label class="_span data-v-60bbf80f bh-article-group__label">年　　龄</label>
+              <view class="_p data-v-60bbf80f bh-article-group__cont">{{ article.Age || '--' }} </view>
+            </view>
+            <view class="_div data-v-60bbf80f bh-article-group">
+              <label class="_span data-v-60bbf80f bh-article-group__label">性别</label>
+              <view class="_p data-v-60bbf80f bh-article-group__cont">{{gender || '--'}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-60bbf80f bh-article-group">
+            <label class="_span data-v-60bbf80f bh-article-group__label">失踪时间</label>
+            <view class="_p data-v-60bbf80f bh-article-group__cont">{{article.MissedAt || '--'}}</view>
+          </view>
+          <view class="_div data-v-60bbf80f bh-article-group">
+            <label class="_span data-v-60bbf80f bh-article-group__label">失踪地点</label>
+            <view class="_p data-v-60bbf80f bh-article-group__cont">{{article.Province}}{{article.City}}-{{article.Address}}</view>
+          </view>
+          <view class="_div data-v-60bbf80f bh-article-group">
+            <label class="_span data-v-60bbf80f bh-article-group__label">特征描述</label>
+            <view class="_p data-v-60bbf80f bh-article-group__cont">{{article.Characters || '--'}}</view>
+          </view>
+          <view class="_div data-v-60bbf80f bh-article-group">
+            <label class="_span data-v-60bbf80f bh-article-group__label">发布详情</label>
+            <view class="_p data-v-60bbf80f bh-article-group__cont">{{article.Details || '--'}}</view>
+          </view>
+          <view class="_div data-v-60bbf80f article-oth-wrap">捐赠(82)
+            <label class="_span data-v-60bbf80f line">|</label>关注(30K)
+            <label class="_span data-v-60bbf80f line">|</label>线索(1234)</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-60bbf80f bhui-comments">
+      <label class="_span data-v-60bbf80f bhui-comments__btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">提供线索</label>
+      <view class="_ul data-v-60bbf80f bhui-comments__list">
+        <view class="_li data-v-60bbf80f bhui-comments__item" wx:key="index" key="{{index}}" wx:for="{{comments}}" wx:for-index="index" wx:for-item="comment">
+          <view class="_div data-v-60bbf80f bhui-comments__avatar">
+            <image src="{{comment.AvatarUrl}}" alt="用户头像" class="_image data-v-60bbf80f"></image>
+          </view>
+          <view class="_p data-v-60bbf80f bhui-comments__name">{{comment.Nickname || '匿名宝宝'}}</view>
+          <view class="_p data-v-60bbf80f bhui-comments__cont">{{comment.Content}}</view>
+          <view class="_p data-v-60bbf80f bhui-comments__time">{{comment.CreatedAt}}</view>
+          <view class="_div data-v-60bbf80f bhui-comments__opt">
+            <view class="_p data-v-60bbf80f">
+              <label class="_span data-v-60bbf80f label">支持</label>({{comment.Like}})</view>
+            <view class="_p data-v-60bbf80f">
+              <label class="_span data-v-60bbf80f label">举报</label>({{comment.Blow}})</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <template data="{{...$root[$kk+'0'], $root}}" is="index$ffb31bba"></template>
+  </view>
+</template>
