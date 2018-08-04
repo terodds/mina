@@ -1,7 +1,7 @@
 # mina
 
-> A Mpvue project, 宝贝回家小程序
-![宝贝回家小程序](static/images/mina/8.jgp)
+> A Mpvue project
+![宝贝回家小程序](https://github.com/bbhj/mina/blob/master/static/images/mina/8.jpg)
 
 ## Build Setup
 
